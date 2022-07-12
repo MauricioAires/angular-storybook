@@ -1,0 +1,29 @@
+<div class="wrapper" [ngClass]="{ 'wrapper--recommended': recommended }">
+  <app-card-header
+    [title]="title"
+    [description]="description"
+    [color]="iconColor"
+    [recommended]="recommended"
+  ></app-card-header>
+
+  <div class="wrapper-price">
+    <p class="wrapper-price__value">{{ formattedPrice }}</p>
+    <p class="wrapper-price__time">{{ subscription }}</p>
+  </div>
+
+  <div class="wrapper-button">
+    <app-button
+      [title]="buttonLabel"
+      [color]="recommended ? 'white' : buttonColor"
+    ></app-button>
+  </div>
+
+  <div class="wrapper-items">
+    <app-card-list-item
+      class="wrapper-items__item"
+      *ngFor="let item of items"
+      [title]="item.title"
+      [active]="item.active"
+    ></app-card-list-item>
+  </div>
+</div>

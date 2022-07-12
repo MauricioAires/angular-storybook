@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.material-icons {
+  font-size: var(--font-large);
+  margin-right: 0.4rem;
+}
+.icon--active {
+  color: var(--color-green);
+}
+
+.icon--inactive {
+  color: var(--color-red);
+}
+
+.title {
+  line-height: 2rem;
+  text-align: center;
+  font-size: var(--font-small);
+  font-weight: var(--font-light);
+  color: var(--color-white);
+}

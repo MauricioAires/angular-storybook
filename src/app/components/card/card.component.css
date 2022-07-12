@@ -1,0 +1,42 @@
+.wrapper {
+  padding: var(--spacings-xxsmall) var(--spacings-small) var(--spacings-small);
+  border-radius: var(--border-radius);
+  transition: background ease-in-out 200ms;
+  cursor: pointer;
+}
+
+.wrapper:hover {
+  background: #212323;
+}
+
+.wrapper--recommended {
+  background-color: var(--color-primary);
+}
+
+.wrapper--recommended:hover {
+  background-color: #1731f1;
+}
+
+.wrapper-price {
+  margin-top: var(--spacings-small);
+  color: var(--color-white);
+}
+.wrapper-price__value {
+  font-size: var(--font-xxlarge);
+  font-weight: var(--font-bold);
+}
+
+.wrapper-price__time {
+  font-size: var(--font-xsmall);
+  font-weight: var(--font-light);
+  opacity: 0.8;
+}
+
+.wrapper-items,
+.wrapper-button {
+  margin-top: var(--spacings-small);
+}
+
+.wrapper-items__item {
+  margin-top: var(--spacings-xxsmall);
+}

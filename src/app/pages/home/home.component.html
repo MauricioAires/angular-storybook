@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <app-card
+    *ngFor="let item of items"
+    [title]="item.title"
+    [description]="item.description"
+    [recommended]="item.recommended"
+    [items]="item.items"
+    [iconColor]="item.iconColor"
+    [price]="item.price"
+    [subscriptionTime]="item.subscriptionTime"
+    [buttonLabel]="item.buttonLabel"
+    [buttonColor]="item.buttonColor"
+  ></app-card>
+</div>

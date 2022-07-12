@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div
+    class="icon-wrapper icon-wrapper--{{ color }}"
+    [ngClass]="{ 'icon-wrapper--recommended': recommended }"
+  >
+    <span class="material-icons">graphic_eq</span>
+
+    <div *ngIf="recommended" class="recommended">Recommended</div>
+  </div>
+  <h2 class="title">
+    {{ title }}
+  </h2>
+
+  <p class="description">
+    {{ description }}
+  </p>
+</div>

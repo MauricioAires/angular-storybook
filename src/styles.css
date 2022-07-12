@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'material-icons/iconfont/material-icons.css';
+
+:root {
+  /* colors */
+  --color-primary: #011ff9;
+  --color-red: #f84f56;
+  --color-white: #eff0f1;
+  --color-green: #4fd180;
+  --color-black: #040505;
+  --color-gray: #a0a6b1;
+
+  /* font- weight  */
+
+  --font-light: 300;
+  --font-normal: 400;
+  --font-bold: 600;
+
+  /* borderr radius */
+  --border-radius: 0.4rem;
+
+  /* backgroudn coloes */
+  --mainBg: #040505;
+
+  /* fonts sizes */
+  --font-xsmall: 1.2rem;
+  --font-small: 1.4rem;
+  --font-medium: 1.6rem;
+  --font-large: 1.8rem;
+  --font-xlarge: 2rem;
+  --font-xxlarge: 2.8rem;
+  /* spacings  */
+
+  --spacings-xxsmall: 0.8rem;
+  --spacings-xsmall: 1.6rem;
+  --spacings-small: 2.4rem;
+  --spacings-medium: 3.2rem;
+  --spacings-large: 4rem;
+  --spacings-xlarge: 4.8rem;
+  --spacings-xxlarge: 5.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+}
+
+*,
+&::before,
+&::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--mainBg);
+}

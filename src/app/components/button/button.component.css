@@ -1,0 +1,37 @@
+.wrapper {
+  border: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: calc(var(--border-radius) * 2);
+  font-weight: var(--font-bold);
+  font-size: var(--font-medium);
+  cursor: pointer;
+  border: 0.2rem solid transparent;
+  transition: background ease-in-out 100ms;
+}
+
+.wrapper--black:hover,
+.wrapper--white:hover,
+.wrapper--blue:hover {
+  filter: brightness(0.9);
+}
+
+.wrapper--blue {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.wrapper--white {
+  color: var(--color-black);
+  background: var(--color-white);
+}
+
+.wrapper--black {
+  color: var(--color-white);
+  background: transparent;
+  border-color: var(--color-gray);
+}
