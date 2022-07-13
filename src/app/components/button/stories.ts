@@ -4,8 +4,7 @@ import { ButtonComponent } from './button.component'
 
 export default {
   component: ButtonComponent,
-  title: 'Library/Button',
-  excludeStories: /.*Data$/
+  title: 'Library/Button'
 } as Meta
 
 //👇 We create a “template” of how args map to rendering

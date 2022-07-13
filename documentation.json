@@ -66,7 +66,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-1f36d823e189ada333d1d8df02410b46d0c8c0d7eb78a3e6b694f4e35dbc24ae8a68bbe3f6691a6ef78b50f8bd0b7dd3df520d6a2e8492118292a2fabf8796f6",
+            "id": "component-AppComponent-96a1907c3d60729690887d76fc5ad2168ab898fa785d76304774386df85693ed03ebe599d0274a49f09ab84bc63a5f58d9a053abf5b284465d2b075a03da77f6",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -86,14 +86,17 @@
             "outputsClass": [],
             "propertiesClass": [
                 {
-                    "name": "title",
-                    "defaultValue": "'angular-storybook'",
+                    "name": "items",
+                    "defaultValue": "mockHome",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "string",
+                    "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 9
+                    "line": 10,
+                    "modifierKind": [
+                        123
+                    ]
                 }
             ],
             "methodsClass": [],
@@ -104,16 +107,16 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'angular-storybook';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core'\n\nimport mockHome from 'app/pages/home/mock'\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  public items = mockHome\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "\n",
+                    "data": ".wrapper {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n  max-width: 1170px;\n  margin: 0 auto;\n}\n",
                     "styleUrl": "./app.component.css"
                 }
             ],
             "stylesData": "",
-            "templateData": "<app-card></app-card>\n"
+            "templateData": "<div class=\"wrapper\">\n  <app-home [items]=\"items\"></app-home>\n</div>\n"
         },
         {
             "name": "ButtonComponent",
@@ -333,7 +336,7 @@
         },
         {
             "name": "CardComponent",
-            "id": "component-CardComponent-2f3a8ac279b3f1b2edf822761a536ae39d61a44d774862526a4b3c9e1076ffda7c7a5670a6289ecb4a5587643cf06b98112c67bd307cc78206fc9b86ec61d8b9",
+            "id": "component-CardComponent-2f53ea51aace2a6813657ff333cb6c94de6f2d21b7231b265ecf3dac49f067b6aaa9fd891acab999754bd7a68f319b0318115c626760715af884100e1ee7f63f",
             "file": "src/app/components/card/card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -459,11 +462,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit, Input } from '@angular/core'\n\nimport { CardListItemProps } from 'app/components/card-list-item/card-list-item.component'\nimport { HeaderColor } from 'app/components/card-header/card-header.component'\nimport { ButtonColor } from 'app/components/button/button.component'\nimport { FormatPricePipe } from 'app/utils/pipe/format-price/format-price.pipe'\n\nexport type Subcription = 'lifetime' | 'year' | 'custom'\n\n@Component({\n  selector: 'app-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.css']\n})\nexport class CardComponent implements OnInit {\n  @Input() public title!: string\n  @Input() public description!: string\n  @Input() public recommended: boolean = false\n  @Input() public items!: CardListItemProps[]\n  @Input() public iconColor?: HeaderColor\n  @Input() public price!: number | string\n  @Input() public subscriptionTime!: Subcription\n  @Input() public buttonLabel!: string\n  @Input() public buttonColor!: ButtonColor\n\n  private subsciptionTitle: Record<Subcription, string> = {\n    custom: 'Reach out for a quote',\n    year: '/year',\n    lifetime: 'For a Lifetime'\n  }\n\n  public get formattedPrice() {\n    return typeof this.price === 'string'\n      ? this.price\n      : new FormatPricePipe().transform(this.price)\n  }\n  public get subscription() {\n    return this.subsciptionTitle[this.subscriptionTime]\n  }\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, OnInit, Input } from '@angular/core'\n\nimport { CardListItemProps } from 'app/components/card-list-item/card-list-item.component'\nimport { HeaderColor } from 'app/components/card-header/card-header.component'\nimport { ButtonColor } from 'app/components/button/button.component'\nimport { FormatPricePipe } from 'app/utils/pipe/format-price/format-price.pipe'\n\nexport type Subcription = 'lifetime' | 'year' | 'custom'\n\n@Component({\n  selector: 'app-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.css']\n})\nexport class CardComponent implements OnInit {\n  @Input() public title!: string\n  @Input() public description!: string\n  @Input() public recommended: boolean = false\n  @Input() public items!: CardListItemProps[]\n  @Input() public iconColor!: HeaderColor\n  @Input() public price!: number | string\n  @Input() public subscriptionTime!: Subcription\n  @Input() public buttonLabel!: string\n  @Input() public buttonColor!: ButtonColor\n\n  private subsciptionTitle: Record<Subcription, string> = {\n    custom: 'Reach out for a quote',\n    year: '/year',\n    lifetime: 'For a Lifetime'\n  }\n\n  public get formattedPrice() {\n    return typeof this.price === 'string'\n      ? this.price\n      : new FormatPricePipe().transform(this.price)\n  }\n  public get subscription() {\n    return this.subsciptionTitle[this.subscriptionTime]\n  }\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".wrapper {\n  padding: var(--spacings-xxsmall) var(--spacings-small) var(--spacings-small);\n  border-radius: var(--border-radius);\n  transition: background ease-in-out 200ms;\n  cursor: pointer;\n}\n\n.wrapper:hover {\n  background: #212323;\n}\n\n.wrapper--recommended {\n  background-color: var(--color-primary);\n}\n\n.wrapper--recommended:hover {\n  background-color: #1731f1;\n}\n\n.wrapper-price {\n  margin-top: var(--spacings-small);\n  color: var(--color-white);\n}\n.wrapper-price__value {\n  font-size: var(--font-xxlarge);\n  font-weight: var(--font-bold);\n}\n\n.wrapper-price__time {\n  font-size: var(--font-xsmall);\n  font-weight: var(--font-light);\n  opacity: 0.8;\n}\n\n.wrapper-items,\n.wrapper-button {\n  margin-top: var(--spacings-small);\n}\n\n.wrapper-items__item {\n  margin-top: var(--spacings-xxsmall);\n}\n",
+                    "data": ".wrapper {\n  padding: var(--spacings-xxsmall) var(--spacings-small) var(--spacings-small);\n  border-radius: var(--border-radius);\n  transition: background ease-in-out 200ms;\n  cursor: pointer;\n  width: 25rem;\n  display: flex;\n  min-height: 400px;\n  flex-direction: column;\n  justify-content: flex-start;\n  height: 100%;\n}\n\n.wrapper:hover {\n  background: #212323;\n}\n\n.wrapper--recommended {\n  background-color: var(--color-primary);\n}\n\n.wrapper--recommended:hover {\n  background-color: #1731f1;\n}\n\n.wrapper-price {\n  margin-top: var(--spacings-small);\n  color: var(--color-white);\n}\n.wrapper-price__value {\n  font-size: var(--font-xxlarge);\n  font-weight: var(--font-bold);\n}\n\n.wrapper-price__time {\n  font-size: var(--font-xsmall);\n  font-weight: var(--font-light);\n  opacity: 0.8;\n}\n\n.wrapper-items,\n.wrapper-button {\n  margin-top: var(--spacings-small);\n}\n\n.wrapper-items__item {\n  margin-top: var(--spacings-xxsmall);\n}\n",
                     "styleUrl": "./card.component.css"
                 }
             ],
@@ -804,7 +807,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".wrapper {\n  display: flex;\n  flex-direction: row;\n  gap: var(--spacings-xsmall);\n}\n",
+                    "data": ".wrapper {\n  gap: var(--spacings-xsmall);\n  display: flex;\n  flex-direction: row;\n}\n",
                     "styleUrl": "./home.component.css"
                 }
             ],
@@ -1273,7 +1276,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<CardListItemComponent>",
-                "defaultValue": "(args) => ({\n  props: args,\n})"
+                "defaultValue": "(args) => ({\n  props: args\n})"
             },
             {
                 "name": "Template",
@@ -1501,7 +1504,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<CardListItemComponent>",
-                    "defaultValue": "(args) => ({\n  props: args,\n})"
+                    "defaultValue": "(args) => ({\n  props: args\n})"
                 },
                 {
                     "name": "Uncative",

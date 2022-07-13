@@ -17,7 +17,7 @@ export class CardComponent implements OnInit {
   @Input() public description!: string
   @Input() public recommended: boolean = false
   @Input() public items!: CardListItemProps[]
-  @Input() public iconColor?: HeaderColor
+  @Input() public iconColor!: HeaderColor
   @Input() public price!: number | string
   @Input() public subscriptionTime!: Subcription
   @Input() public buttonLabel!: string

@@ -5,7 +5,6 @@ import { CardHeaderComponent } from './card-header.component'
 export default {
   component: CardHeaderComponent,
   title: 'Card/CardHeader',
-  excludeStories: /.*Data$/,
   argTypes: {
     color: {
       options: ['white', 'blue', 'red'],

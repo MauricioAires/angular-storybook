@@ -12,7 +12,6 @@ import mockCardComponent from './mock'
 export default {
   component: CardComponent,
   title: 'Card/Card',
-  excludeStories: /.*Data$/,
   args: mockCardComponent,
   argTypes: {
     // subscriptionTime: {

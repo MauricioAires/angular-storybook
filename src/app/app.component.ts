@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
+import mockHome from 'app/pages/home/mock'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-storybook';
+  public items = mockHome
 }

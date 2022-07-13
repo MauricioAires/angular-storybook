@@ -1,26 +1,25 @@
-import { Meta, Story } from '@storybook/angular';
+import { Meta, Story } from '@storybook/angular'
 
-import { CardListItemComponent } from './card-list-item.component';
+import { CardListItemComponent } from './card-list-item.component'
 
 export default {
   component: CardListItemComponent,
-  title: 'Card/CardListItemComponent',
-  excludeStories: /.*Data$/,
-} as Meta;
+  title: 'Card/CardListItemComponent'
+} as Meta
 
 const Template: Story<CardListItemComponent> = (args) => ({
-  props: args,
-});
+  props: args
+})
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 
 Default.args = {
-  title: 'Unlimited Projects',
-};
+  title: 'Unlimited Projects'
+}
 
-export const Uncative = Template.bind({});
+export const Uncative = Template.bind({})
 
 Uncative.args = {
   title: 'User provisioning (SCIM)',
-  active: false,
-};
+  active: false
+}

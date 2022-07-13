@@ -13,7 +13,6 @@ import mockHome from './mock'
 export default {
   component: HomeComponent,
   title: 'Pages/Home',
-  excludeStories: /.*Data$/,
   args: {
     items: mockHome
   },
