@@ -1040,7 +1040,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/card-header/stories.ts",
+                "file": "src/app/components/card/stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1050,7 +1050,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/card/stories.ts",
+                "file": "src/app/components/card-header/stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1160,21 +1160,21 @@
                 "name": "Recommended",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/card-header/stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<CardHeaderComponent>",
-                "defaultValue": "(args) => ({\n  props: args\n})"
-            },
-            {
-                "name": "Recommended",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/card/stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Recommended",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/card-header/stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CardHeaderComponent>",
+                "defaultValue": "(args) => ({\n  props: args\n})"
             },
             {
                 "name": "require",
@@ -1249,21 +1249,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/card-header/stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<CardHeaderComponent>",
-                "defaultValue": "(args) => ({\n  props: args\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/card/stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<CardComponent>",
                 "defaultValue": "(args) => ({\n  props: args,\n  component: CardComponent\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/card-header/stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CardHeaderComponent>",
+                "defaultValue": "(args) => ({\n  props: args\n})"
             },
             {
                 "name": "Template",
@@ -1418,38 +1418,6 @@
                     "type": "literal type"
                 }
             ],
-            "src/app/components/card-header/stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/card-header/stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Recommended",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/card-header/stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<CardHeaderComponent>",
-                    "defaultValue": "(args) => ({\n  props: args\n})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/card-header/stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<CardHeaderComponent>",
-                    "defaultValue": "(args) => ({\n  props: args\n})"
-                }
-            ],
             "src/app/components/card/stories.ts": [
                 {
                     "name": "Default",
@@ -1480,6 +1448,38 @@
                     "deprecationMessage": "",
                     "type": "Story<CardComponent>",
                     "defaultValue": "(args) => ({\n  props: args,\n  component: CardComponent\n})"
+                }
+            ],
+            "src/app/components/card-header/stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/card-header/stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Recommended",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/card-header/stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CardHeaderComponent>",
+                    "defaultValue": "(args) => ({\n  props: args\n})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/card-header/stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CardHeaderComponent>",
+                    "defaultValue": "(args) => ({\n  props: args\n})"
                 }
             ],
             "src/app/components/card-list-item/stories.ts": [
