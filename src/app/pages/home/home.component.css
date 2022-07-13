@@ -1,5 +1,5 @@
 .wrapper {
+  gap: var(--spacings-xsmall);
   display: flex;
   flex-direction: row;
-  gap: var(--spacings-xsmall);
 }
