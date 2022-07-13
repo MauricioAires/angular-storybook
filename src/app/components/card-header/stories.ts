@@ -7,7 +7,7 @@ export default {
   title: 'Card/CardHeader',
   argTypes: {
     color: {
-      options: ['white', 'blue', 'red'],
+      options: ['blue', 'white', 'red'],
       control: { type: 'radio' }
     }
   }

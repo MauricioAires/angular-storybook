@@ -14,12 +14,16 @@ export default {
   title: 'Card/Card',
   args: mockCardComponent,
   argTypes: {
-    // subscriptionTime: {
-    //   options: ['lifetime', 'year', 'custom'],
-    //   control: { type: 'radio' }
-    // },
     buttonColor: {
-      options: ['blue', 'white'],
+      options: ['blue', 'white', 'black'],
+      control: { type: 'radio' }
+    },
+    iconColor: {
+      options: ['white', 'blue', 'red'],
+      control: { type: 'radio' }
+    },
+    subscriptionTime: {
+      options: ['lifetime', 'year', 'custom'],
       control: { type: 'radio' }
     }
   },

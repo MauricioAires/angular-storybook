@@ -10,7 +10,6 @@ export type ButtonColor = 'blue' | 'white' | 'black'
 export class ButtonComponent implements OnInit {
   @Input() public title!: string
   @Input() public color: ButtonColor = 'blue'
-  @Input() public size: 'small' | 'normal' | 'large' = 'large'
 
   constructor() {}
 

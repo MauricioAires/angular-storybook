@@ -4,7 +4,13 @@ import { ButtonComponent } from './button.component'
 
 export default {
   component: ButtonComponent,
-  title: 'Library/Button'
+  title: 'Library/Button',
+  argTypes: {
+    color: {
+      options: ['blue', 'white', 'black'],
+      control: { type: 'radio' }
+    }
+  }
 } as Meta
 
 //👇 We create a “template” of how args map to rendering

@@ -244,7 +244,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-f1e62da5acf5c2dd5617042703ea881006195ef9c491997f49975a66a71b18ff85dd7ed40762bf22c9d9b8d67c1d16e8b9f2516099d9702f37e2f9717144ff10-1",
+            "id": "component-ButtonComponent-ae113c629edcd06f5b231fc149662e8c060b816dbc69756793324325d522bbed34fc2a931949b2599bff220ab787a29564ea8af216707132eacfe8fdcfedad5f-1",
             "file": "src/app/components/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -271,15 +271,6 @@
                     "decorators": []
                 },
                 {
-                    "name": "size",
-                    "defaultValue": "'large'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 13,
-                    "type": "\"small\" | \"normal\" | \"large\"",
-                    "decorators": []
-                },
-                {
                     "name": "title",
                     "deprecated": false,
                     "deprecationMessage": "",
@@ -297,7 +288,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 17,
+                    "line": 16,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -309,7 +300,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core'\n\nexport type ButtonColor = 'blue' | 'white' | 'black'\n\n@Component({\n  selector: 'app-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css']\n})\nexport class ButtonComponent implements OnInit {\n  @Input() public title!: string\n  @Input() public color: ButtonColor = 'blue'\n  @Input() public size: 'small' | 'normal' | 'large' = 'large'\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core'\n\nexport type ButtonColor = 'blue' | 'white' | 'black'\n\n@Component({\n  selector: 'app-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css']\n})\nexport class ButtonComponent implements OnInit {\n  @Input() public title!: string\n  @Input() public color: ButtonColor = 'blue'\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -324,7 +315,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 13
+                "line": 12
             },
             "implements": [
                 "OnInit"
@@ -1770,7 +1761,7 @@
                 "linktype": "component",
                 "name": "ButtonComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/6",
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {

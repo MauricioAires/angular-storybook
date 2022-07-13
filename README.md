@@ -35,6 +35,8 @@ Segue abaixo o link do deploy na Chromatic:
 
 Chromatic: [https://www.chromatic.com/library/angular-storybook](https://www.chromatic.com/library?appId=62ce09de13f8b77320c8ea1c)
 
+Storybook Chromatic: [https://www.chromatic.com/library/angular-storybook#storybook](https://62ce09de13f8b77320c8ea1c-ejjfqnocix.chromatic.com/)
+
 ## 🔖 Layout
 
 Layout do projeto
