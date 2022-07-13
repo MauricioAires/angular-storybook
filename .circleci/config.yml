@@ -1,6 +1,0 @@
-- run:
-    command: npm install # install dependencies
-- run:
-    command: npm test # run your unit tests
-- run:
-    command: npm run chromatic # publish Storybook and run visual tests
